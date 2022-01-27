@@ -10,7 +10,7 @@ If you need to get in touch, [twitter] or [e-mail] are your best bet.
 
 {{
     figure(
-        src="about/caliu.jpg",
+        src="caliu.jpg",
         alt="Caliu, a medium-haired dilute gray tortoiseshell domestic cat, is laying on my lap, looking up at the camera with a quizzical look. We are sitting on my couch, enjoying our time together.",
         style="border-radius: 8px; width: 80%; display: block; margin-left: auto; margin-right: auto",
         caption="Fig. 1: A spoiled Caliu."
