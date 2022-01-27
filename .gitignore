@@ -1,1 +1,4 @@
 zola
+static/syntax-*.css
+public/**
+
