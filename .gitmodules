@@ -1,4 +1,4 @@
 [submodule "themes/blow"]
 	path = themes/blow
-	url = https://github.com/tchartron/blow.git
-	branch = main
+	url = https://github.com/mechie/zola-blow.git
+	branch = fix-mobile-menu
