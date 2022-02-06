@@ -1,14 +1,16 @@
 {% if src %}
-  <figure class="{% if class %}{{ class }}{% else -%} text-center {%- endif %}" >
+  <figure class="{% if class %}{{ class | safe }}{% else -%} text-center {%- endif %}" >
     {% if img_hyperlink %}
     <a href="{{ img_hyperlink | safe }}" target="_blank">
     {% endif %}
-      <img src="{{ src | safe }}"{% if alt %} alt="{{ alt }}"{% endif %}{% if style %} style="{{ style }}"{% endif %} />
+      <img src="{{ src | safe }}"{% if alt %} alt="{{ alt | safe }}"{% endif %}{% if style %} style="{{ style | safe }}"{% endif %} />
     {% if img_hyperlink %}
     </a>
     {% endif %}
     {% if caption %}
-      <figcaption class="{% if caption_class %}{{ caption_class }}{% else -%} text-center {%- endif %}"{% if caption_style %} style="{{ caption_style | safe }}"{% endif %}>{{ caption }}</figcaption>
+    <figcaption class="{% if caption_class %}{{ caption_class | safe }}{% else -%} text-center {%- endif %}"{% if caption_style %} style="{{ caption_style | safe }}"{% endif %}>
+      {{ caption | safe }}
+    </figcaption>
     {% endif %}
   </figure>
 {% endif %}
